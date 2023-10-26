@@ -1,43 +1,61 @@
-/* #root {
-  min-width: 800px;
-  min-height: 477px;
-  margin: 0 auto;
-  padding: 2rem;
+/* .App {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-@keyframes logo-spin {
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 } */
+
+.back-button-gradient {
+  background: linear-gradient(91deg, #ffae5a 6.24%, #fb8d1a 94.79%);
+}
+
+.dashboard-button-active {
+  border-bottom: 2px solid #747070;
+  background: linear-gradient(272deg, #573cfa 6.17%, #7e7afd 98.25%);
+}
+
+.home-button-gradient {
+  background: linear-gradient(271deg, #02864a 10.4%, #18cc7a 97.19%);
+}
+
+.toner-button-active {
+  border-bottom: 2px solid #747070;
+  background: linear-gradient(272deg, #49bf88 6.17%, #59cb97 98.25%);
+}
+
+.media-button-active {
+  border-bottom: 2px solid #747070;
+  background-color: #ffa74b;
+}

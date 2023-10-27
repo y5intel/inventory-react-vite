@@ -5,11 +5,16 @@
 import Wifi from "../../assets/image/Wifi.png";
 import Back from "../../assets/image/Back.png";
 
-export const Navbar = () => {
+export const Navbar = ({ sidebarActive }) => {
   return (
     <nav className=" flex flex-row w-[800px] h-[50px]">
-      <div className="flex w-[96px] h-[50px] back-button-gradient items-center justify-center">
+      <div
+        className={`flex ${
+          sidebarActive ? "w-[130px]" : "w-[96px]"
+        } h-[50px] gap-[10px] back-button-gradient items-center justify-center duration-500`}
+      >
         <img src={Back} alt="back" />
+        {sidebarActive && <p className="text-white">BACK</p>}
       </div>
       <div className="flex flex-row w-full h-full bg-[#FFF] py-[5px] justify-between px-[10px] items-center">
         <p className="text-[#000] text-[18px] font-semibold not-italic uppercase leading-[22.324px] tracking-[0.99px]">

@@ -1,123 +1,175 @@
 import Dashboard from "../../assets/image/Dashboard.png";
-import DashboardActive from "../../assets/image/Dashboard_active.png";
+import DashboardSelected from "../../assets/image/Dashboard_selected.png";
 import Toner from "../../assets/image/Toner.png";
-import TonerActive from "../../assets/image/Toner_active.png";
+import TonerSelected from "../../assets/image/Toner_selected.png";
 import Media from "../../assets/image/Media.png";
-import MediaActive from "../../assets/image/Media_active.png";
-import Bubble from "../../assets/image/Bubble.png";
+import MediaSelected from "../../assets/image/Media_selected.png";
+import Token from "../../assets/image/Bubble.png";
 import Home from "../../assets/image/Home.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export const Sidebar = ({ setActiveScreenIdx }) => {
-  const [active, setActive] = useState(false);
+export const Sidebar = ({
+  setActiveScreenParam,
+  sidebarActive,
+  setSidebarActive,
+}) => {
+  const [isSelected, setIsSelected] = useState({
+    Overview: true,
+    Toner: false,
+    Media: false,
+    Token: false,
+  });
 
-  const handleActiveSlide = (index) => {
-    setActiveScreenIdx(index);
-    setActive(!active);
-    setTimeout(() => {
-      setActive(false);
-    }, 5000);
+  const handleClicked = (param) => {
+    setActiveScreenParam(param);
+
+    setIsSelected({
+      ...Object.keys(isSelected).reduce((acc, curr) => {
+        acc[curr] = curr === param;
+        return acc;
+      }, {}),
+    });
+
+    if (isSelected[param]) {
+      setSidebarActive(!sidebarActive);
+    } else {
+      setSidebarActive(true);
+    }
   };
+
+  useEffect(() => {
+    let timer;
+    if (sidebarActive) {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        setSidebarActive(false);
+      }, 5000);
+    }
+    return () => clearTimeout(timer);
+  }, [sidebarActive, isSelected]);
 
   return (
     <div className="sidebar">
       <div className="flex bg-[#E3E3E3]">
         <div
           className={`flex flex-col mx-2 my-[11px] h-[356px] px-[5px] py-2 rounded-3xl bg-[#FFF] border ${
-            active ? "w-[180px]" : "w-[70px]"
+            sidebarActive ? "w-[180px]" : "w-[70px]"
           } border-[#45454580] justify-between duration-500`}
         >
           <div className="flex flex-col gap-[20px] mx-[4px]">
             <div
-              onClick={() => handleActiveSlide(1)}
-              className={`flex rounded-[19px] justify-center items-center p-[6px] border border-[#573CFA] ${
-                active && "dashboard-button-active"
+              onClick={() => handleClicked("Overview")}
+              className={`flex rounded-[19px] justify-center items-center p-[6px] border border-[#573CFA] cursor-pointer ${
+                isSelected.Overview && "dashboard-button-selected border-none"
               } gap-[10px]`}
             >
-              {!active ? (
-                <img src={Dashboard} alt="dashboard" className="" />
-              ) : (
-                <div className="flex flex-row gap-[18px] items-center">
+              <div className="flex flex-row gap-[18px] items-center">
+                {!isSelected.Overview ? (
+                  <img src={Dashboard} alt="dashboard" className="" />
+                ) : (
                   <img
-                    src={DashboardActive}
-                    alt="dashboard-active"
+                    src={DashboardSelected}
+                    alt="dashboard-select"
                     className="w-[35px] h-[35px]"
                   />
-                  <div className="flex flex-col delay-500">
+                )}
+                {sidebarActive && (
+                  <div className="flex flex-col">
                     <p
                       className={`${
-                        active ? "text-[#FFF]" : "text-[#573CFA]"
+                        isSelected.Overview ? "text-[#FFF]" : "text-[#573CFA]"
                       } uppercase text-base font-bold leading-[19.844px] tracking-[0.88px] `}
                     >
                       OverView
                     </p>
                     <p
                       className={`${
-                        active ? "text-[#FFF]" : "text-[#573CFA]"
+                        isSelected.Overview ? "text-[#FFF]" : "text-[#573CFA]"
                       } text-xs font-normal leading-[14.883px] tracking-[0.66px]`}
                     >
                       Inventory
                     </p>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
             <div
-              onClick={() => handleActiveSlide(2)}
-              className={`flex rounded-[19px] justify-center items-center h-[50px] border border-[#4FC38E] ${
-                active && "toner-button-active"
+              onClick={() => handleClicked("Toner")}
+              className={`flex rounded-[19px] justify-center items-center h-[50px] border border-[#4FC38E] cursor-pointer ${
+                isSelected.Toner && "toner-button-selected border-none"
               } gap-[10px]`}
             >
-              {!active ? (
-                <img src={Toner} alt="Toner" className="" />
-              ) : (
-                <div className="flex flex-row gap-[18px]">
-                  <img src={TonerActive} alt="Toner-active" />
-                  <div className="flex flex-col delay-500">
+              <div className="flex flex-row gap-[18px] items-center">
+                {!isSelected.Toner ? (
+                  <img src={Toner} alt="Toner" className="" />
+                ) : (
+                  <img src={TonerSelected} alt="Toner-select" />
+                )}
+                {sidebarActive && (
+                  <div className="flex flex-col">
                     <p
                       className={`${
-                        active ? "text-[#FFF]" : "text-[#4FC38E]"
+                        isSelected.Toner ? "text-[#FFF]" : "text-[#4FC38E]"
                       } text-sm font-medium leading-[17.363px] tracking-[0.77px] `}
                     >
                       Toner
                     </p>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
             <div
-              onClick={() => handleActiveSlide(3)}
-              className={`flex rounded-[19px] justify-center items-center h-[50px] border border-[#FFA74B] ${
-                active && "media-button-active"
+              onClick={() => handleClicked("Media")}
+              className={`flex rounded-[19px] justify-center items-center h-[50px] border border-[#FFA74B] cursor-pointer ${
+                isSelected.Media && "media-button-selected border-none"
               } gap-[10px]`}
             >
-              {!active ? (
-                <img src={Media} alt="Media" className="" />
-              ) : (
-                <div className="flex flex-row gap-[18px]">
-                  <img src={MediaActive} alt="Media-active" />
-                  <div className="flex flex-col delay-500">
+              <div className="flex flex-row gap-[18px] items-center">
+                {!isSelected.Media ? (
+                  <img src={Media} alt="Media" className="" />
+                ) : (
+                  <img src={MediaSelected} alt="Media-select" />
+                )}
+                {sidebarActive && (
+                  <div className="flex flex-col">
                     <p
                       className={`${
-                        active ? "text-[#FFF]" : "text-[#FFA74B]"
+                        isSelected.Media ? "text-[#FFF]" : "text-[#FFA74B]"
                       } text-sm font-medium leading-[17.363px] tracking-[0.77px] `}
                     >
-                      Toner
+                      Media
                     </p>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           </div>
-          <div className="flex mx-[4px]">
-            <div className="flex w-[50px] h-[50px] justify-center items-center border border-[#A2A2A2] rounded-[19px] sidebar-item">
-              <img src={Bubble} alt="Bubble" />
+          <div
+            onClick={() => handleClicked("Token")}
+            className={`flex rounded-[19px] justify-center items-center h-[50px] mx-[4px] border border-[#A2A2A2] cursor-pointer ${
+              isSelected.Token && "token-button-selected border-none"
+            } gap-[10px]`}
+          >
+            <div className="flex flex-row gap-[18px] items-center">
+              <img src={Token} alt="Token" className="" />
+              {sidebarActive && (
+                <div className="flex flex-col">
+                  <p className="text-[#000] text-sm font-medium leading-[17.363px] tracking-[0.77px]">
+                    Token Offers
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </div>
-      <div className="flex w-[86px] h-[50px] home-button-gradient items-center justify-center sidebar-item">
+      <div className="flex h-[50px] home-button-gradient justify-center items-center gap-[10px] cursor-pointer">
         <img src={Home} alt="home" />
+        {sidebarActive && (
+          <p className="text-[#fff] text-lg font-normal leading-[22.324px]">
+            HOME
+          </p>
+        )}
       </div>
     </div>
   );

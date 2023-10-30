@@ -11,7 +11,7 @@ export const Navbar = ({ sidebarActive }) => {
       <div
         className={`flex ${
           sidebarActive ? "w-[130px]" : "w-[96px]"
-        } h-[50px] gap-[10px] back-button-gradient items-center justify-center duration-500`}
+        } h-[50px] gap-[10px] back-button-gradient items-center justify-center cursor-pointer duration-500`}
       >
         <img src={Back} alt="back" />
         {sidebarActive && <p className="text-white">BACK</p>}

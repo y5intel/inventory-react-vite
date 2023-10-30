@@ -1,8 +1,13 @@
 // import { useState } from "react";
+import clsx from "clsx";
 
-export const Card = () => {
+export const Card = ({ className }) => {
+  const CardClass = clsx(
+    "flex flex-col w-full h-[90px] border rounded-[21px] shadow-[0_4px_4px_0_rgba(0,0,0,0.39)] px-[21px] pt-2  gap-[6px]",
+    className
+  );
   return (
-    <div className="flex flex-col w-[205px] h-[90px] border border-[#3FB780] rounded-[21px] shadow-[0_4px_4px_0_rgba(0,0,0,0.39)] px-[21px] pt-2  gap-[6px]">
+    <div className={CardClass}>
       <p className="truncate text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
         UniNet iColor 560 T...
       </p>

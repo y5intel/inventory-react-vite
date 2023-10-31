@@ -1,3 +1,9 @@
+@import url("https://rsms.me/inter/inter.css");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
 .back-button-gradient {
   background: linear-gradient(91deg, #ffae5a 6.24%, #fb8d1a 94.79%);
 }
@@ -26,13 +32,6 @@
   background: linear-gradient(272deg, #b6b6b6 6.17%, #d9d9d9 98.25%);
 }
 
-/* .carousel {
-  display: inline-flex;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-} */
-
 .progress-bar {
   width: 70%;
   margin: auto;
@@ -46,4 +45,9 @@
   height: 100%;
   background-color: #4fc38e;
   border-radius: 10px;
+}
+
+.currency {
+  overflow-y: scroll;
+  scrollbar-color: red;
 }

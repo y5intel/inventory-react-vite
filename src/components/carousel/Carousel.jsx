@@ -33,27 +33,27 @@ export const Carousel = ({ _visibility }) => {
         >
           <SwiperSlide>
             <div className="swiper-zoom-container">
-              <img src={Image} />
+              <img src={Image} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-zoom-container">
-              <img src={Image} />
+              <img src={Image} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-zoom-container">
-              <img src={Image} />
+              <img src={Image} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-zoom-container">
-              <img src={Image} />
+              <img src={Image} alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-zoom-container">
-              <img src={Image} />
+              <img src={Image} alt="" />
             </div>
           </SwiperSlide>
         </Swiper>

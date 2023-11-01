@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const AddStepSix = () => {
   return (
     <>
-      <Navbar />
+      <Navbar sidebarActive={true} />
       <div className="bg-[#D9D9D9] w-[800px] h-[428px]">
         <div className="py-[14px] px-[26px]">
           <p className="text-[#000] text-lg font-normal leading-[22.324px] items-center">

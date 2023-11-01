@@ -5,7 +5,7 @@ import Image from "../assets/image/image 7.png";
 export const AddStepFour = () => {
   return (
     <>
-      <Navbar />
+      <Navbar sidebarActive={true} />
       <div className="bg-[#D9D9D9] w-[800px] h-[428px]">
         <div className="py-[14px] px-[26px]">
           <p className="text-[#000] text-lg font-normal leading-[22.324px] items-center">
@@ -54,7 +54,7 @@ export const AddStepFour = () => {
               <div className="flex flex-col w-full py-[15px]">
                 <div className="flex justify-center">
                   <div className="flex justify-center border border-[#B6B6B6] w-[139px] h-[139px]">
-                    <img src={Image} />
+                    <img src={Image} alt="" />
                   </div>
                 </div>
                 <div className="grid grid-cols-2 pt-[14px] text-xs leading-[14.833px] tracking-[0.66px] gap-[4px] ">

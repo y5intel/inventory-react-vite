@@ -47,7 +47,10 @@
   border-radius: 10px;
 }
 
-.currency {
-  overflow-y: scroll;
-  scrollbar-color: red;
+.toner {
+  border-color: #3fb780;
+}
+
+.media {
+  border-color: #ffa74b;
 }

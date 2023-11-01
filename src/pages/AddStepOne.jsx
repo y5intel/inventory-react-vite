@@ -1,25 +1,18 @@
 import { Navbar } from "../components/navbar/Navbar";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Carousel } from "../components/carousel/Carousel";
 import { useState } from "react";
 
-let count = 0;
 export const AddStepOne = () => {
   const [isProgressBarClicked, setIsProgressBarClicked] = useState(false);
 
   const handleProgressBarClick = () => {
-    count++;
-    if (count === 1) {
-      setIsProgressBarClicked(true);
-    }
-    if (count > 1) {
-      window.location.href = "/overview/add/step2";
-    }
+    setIsProgressBarClicked(true);
   };
 
   return (
     <>
-      <Navbar />
+      <Navbar sidebarActive={true} />
       <div className="bg-[#D9D9D9] w-[800px] h-[428px]">
         <div className="py-[14px] px-[26px]">
           <p className="text-[#000] text-lg font-normal leading-[22.324px] items-center">
@@ -37,12 +30,13 @@ export const AddStepOne = () => {
             className="progress-bar cursor-pointer"
             onClick={handleProgressBarClick}
           >
-            <div
-              className="progress"
-              style={
-                !isProgressBarClicked ? { width: "10%" } : { width: "100%" }
-              }
-            ></div>
+            {!isProgressBarClicked ? (
+              <div className="progress" style={{ width: "10%" }}></div>
+            ) : (
+              <Link to="/overview/add/step2">
+                <div className="progress" style={{ width: "100%" }}></div>
+              </Link>
+            )}
           </div>
           {isProgressBarClicked ? (
             <div className="flex justify-center mt-2">

@@ -17,7 +17,7 @@ export const AddStepTwo = () => {
             <p className="text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
               Step 2 - Price Details
             </p>
-            <p className="text-[#686868] text-xs font-normal leading-[14.833px] tracking-[0.66px] items-center">
+            <p className="text-[#686868] custom-font-sm items-center">
               We can help you be more profitable if you tell us what the item
               cost you
             </p>
@@ -29,13 +29,13 @@ export const AddStepTwo = () => {
               </div>
 
               <div className="flex flex-row px-2 gap-[16px]">
-                <div className="flex flex-col text-[#616161] w-[78px] text-xs font-bold leading-[14.833px] tracking-[0.66px]">
+                <div className="flex flex-col text-[#616161] w-[78px] custom-font-sm font-bold">
                   <p>Name</p>
                   <p className="pt-[11px]">Description</p>
                   <p className="pt-[4px]">SKU</p>
                   <p className="pt-[4px]">Yields</p>
                 </div>
-                <div className="flex flex-col w-[177px] text-[#616161] text-xs font-bold leading-[14.833px] tracking-[0.66px]">
+                <div className="flex flex-col w-[177px] text-[#616161] custom-font-sm font-bold">
                   <p className="font-bold ">UniNet iColor 560 Toner</p>
                   <p className="font-normal pt-[10px]">Cyan EXT Yield</p>
                   <p className="font-normal pt-[4px]">UNICT560</p>
@@ -105,7 +105,7 @@ export const AddStepTwo = () => {
               </div>
               <div className="flex justify-center">
                 <div className="flex-col">
-                  <label className="text-[#573CFA] text-xs font-normal leading-[14.833px] tracking-[0.66px]">
+                  <label className="text-[#573CFA] custom-font-sm">
                     Total Price
                   </label>
                   <input

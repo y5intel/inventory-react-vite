@@ -18,7 +18,7 @@ export const AddStepFour = () => {
               Step 4 - Review Details
             </p>
             <div className="w-[647px] h-[249px] rounded-[32px] mx-[18px] mr-[21px] mt-[10px] px-[23px] border border-black grid grid-cols-2">
-              <div className="flex flex-col text-xs leading-[14.833px] tracking-[0.66px] gap-[4px] mt-[50px]">
+              <div className="flex flex-col custom-font-sm gap-[4px] mt-[50px]">
                 <div className="grid grid-cols-2">
                   <p className="font-bold">Name</p>
                   <p className="font-normal">
@@ -42,7 +42,7 @@ export const AddStepFour = () => {
                 <div className="grid grid-cols-2">
                   <p className="font-bold">Number of Yields</p>
                 </div>
-                <div className="grid grid-cols-2 w-[260px] mx-auto text-xs leading-[14.833px] tracking-[0.66px] gap-[4px] font-normal pl-[30px] pt-2">
+                <div className="grid grid-cols-2 w-[260px] mx-auto custom-font-sm gap-[4px] font-normal pl-[30px] pt-2">
                   <p>Pages</p>
                   <p>7,000</p>
                   <p>Coverage</p>
@@ -57,7 +57,7 @@ export const AddStepFour = () => {
                     <img src={Image} alt="" />
                   </div>
                 </div>
-                <div className="grid grid-cols-2 pt-[14px] text-xs leading-[14.833px] tracking-[0.66px] gap-[4px] ">
+                <div className="grid grid-cols-2 pt-[14px] custom-font-sm gap-[4px] ">
                   <p className="font-bold">Total Price</p>
                   <p className="font-normal">$100.00</p>
                   <p className="font-bold">Date of Purchase</p>

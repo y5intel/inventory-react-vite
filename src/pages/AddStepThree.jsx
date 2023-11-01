@@ -17,7 +17,7 @@ export const AddStepThree = () => {
             <p className="text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
               Step 3 - Price of Purchase
             </p>
-            <p className="text-[#686868] text-xs font-normal leading-[14.833px] tracking-[0.66px] items-center">
+            <p className="text-[#686868] custom-font-sm items-center">
               We can help you be more profitable if you tell us what the item
               cost you
             </p>
@@ -29,13 +29,13 @@ export const AddStepThree = () => {
               </div>
 
               <div className="flex flex-row px-2 gap-[16px]">
-                <div className="flex flex-col text-[#616161] w-[78px] text-xs font-bold leading-[14.833px] tracking-[0.66px]">
+                <div className="flex flex-col text-[#616161] w-[78px] font-bold custom-font-sm">
                   <p>Name</p>
                   <p className="pt-[11px]">Description</p>
                   <p className="pt-[4px]">SKU</p>
                   <p className="pt-[4px]">Yields</p>
                 </div>
-                <div className="flex flex-col w-[177px] text-[#616161] text-xs font-bold leading-[14.833px] tracking-[0.66px]">
+                <div className="flex flex-col w-[177px] text-[#616161] font-bold custom-font-sm">
                   <p className="font-bold ">UniNet iColor 560 Toner</p>
                   <p className="font-normal pt-[10px]">Cyan EXT Yield</p>
                   <p className="font-normal pt-[4px]">UNICT560</p>
@@ -47,7 +47,7 @@ export const AddStepThree = () => {
             </div>
             <div className="w-full flex flex-col gap-[10px]">
               <div className="">
-                <label className="text-[#333] text-xs font-normal leading-[14.833px] tracking-[0.66px]">
+                <label className="text-[#333] custom-font-sm font-medium">
                   Date of Purchase
                 </label>
               </div>

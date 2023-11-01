@@ -40,13 +40,13 @@ export const AddStepOne = () => {
           </div>
           {isProgressBarClicked ? (
             <div className="flex justify-center mt-2">
-              <p className="text-[#6c6c6c] text-xs font-normal leading-[14.833px] tracking-[0.66px] items-center mx-auto">
+              <p className="text-[#6c6c6c] custom-font-sm items-center mx-auto">
                 Item loaded successfully!
               </p>
             </div>
           ) : (
             <div className="flex justify-center mt-2">
-              <p className="text-[#6c6c6c] text-xs font-normal leading-[14.833px] tracking-[0.66px] items-center mx-auto">
+              <p className="text-[#6c6c6c] custom-font-sm items-center mx-auto">
                 Verifying Code
               </p>
             </div>

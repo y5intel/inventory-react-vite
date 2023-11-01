@@ -61,7 +61,7 @@ export const Overview = ({ activeScreenParam }) => {
             </div>
           </div>
           <div className="mr-[10px] mb-[20px] pl-[29px] pr-[10px] pb-[10px] grid grid-cols-3 gap-[10px] mt-[11px] overflow-y-auto">
-            <Link to="/">
+            <Link to="/toner/view">
               <div className={`${cardClass} toner cursor-pointer`}>
                 {isDescSelected ? (
                   <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
@@ -81,176 +81,205 @@ export const Overview = ({ activeScreenParam }) => {
                 )}
               </div>
             </Link>
-            <div className={`${cardClass} toner cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <p className="truncate font-normal">UniNet iColor 560 T...</p>
-                  <p className="truncate font-normal">Cyan EXT Yield</p>
-                  <div className="flex flex-row justify-between">
-                    <p className="font-bold uppercase">unict560</p>
-                    <p className="font-bold uppercase">75%</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <img src={TonerItem2} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} toner cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <p className="truncate font-normal">UniNet iColor 560 T...</p>
-                  <p className="truncate font-normal">Black EXT Yield</p>
-                  <div className="flex flex-row justify-between">
-                    <p className="font-bold uppercase">unict560</p>
-                    <p className="font-bold uppercase">75%</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <img src={TonerItem3} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} toner cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <p className="truncate font-normal">UniNet iColor 560 T...</p>
-                  <p className="truncate font-normal">Yellow EXT Yield</p>
-                  <div className="flex flex-row justify-between">
-                    <p className="font-bold uppercase">unict560</p>
-                    <p className="font-bold uppercase">75%</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <img src={TonerItem4} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} media cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <div className="flex flex-col justify-center flex-shrink-0">
-                    <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
-                      FOREVER Temporary Tattoo Paper for Toner Printers (100
-                      pack)
+            <Link to="/toner/view">
+              <div className={`${cardClass} toner cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <p className="truncate font-normal">
+                      UniNet iColor 560 T...
                     </p>
+                    <p className="truncate font-normal">Cyan EXT Yield</p>
+                    <div className="flex flex-row justify-between">
+                      <p className="font-bold uppercase">unict560</p>
+                      <p className="font-bold uppercase">75%</p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-between gap-4">
-                    <p className="font-bold uppercase truncate">
-                      AWTATPAPER100
+                ) : (
+                  <>
+                    <img src={TonerItem2} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/toner/view">
+              <div className={`${cardClass} toner cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <p className="truncate font-normal">
+                      UniNet iColor 560 T...
                     </p>
-                    <p className="font-bold">75pgs.</p>
+                    <p className="truncate font-normal">Black EXT Yield</p>
+                    <div className="flex flex-row justify-between">
+                      <p className="font-bold uppercase">unict560</p>
+                      <p className="font-bold uppercase">75%</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={MediaItem1} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} media cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <div className="flex flex-col justify-center flex-shrink-0">
-                    <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
-                      FOREVER Multi-Trans Full Color Toner Transfer Paper for
-                      Hard Surfaces
+                ) : (
+                  <>
+                    <img src={TonerItem3} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/toner/view">
+              <div className={`${cardClass} toner cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <p className="truncate font-normal">
+                      UniNet iColor 560 T...
                     </p>
+                    <p className="truncate font-normal">Yellow EXT Yield</p>
+                    <div className="flex flex-row justify-between">
+                      <p className="font-bold uppercase">unict560</p>
+                      <p className="font-bold uppercase">75%</p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-between gap-4">
-                    <p className="truncate font-bold uppercase">FOREVMTRANS</p>
-                    <p className="font-bold">75pgs.</p>
+                ) : (
+                  <>
+                    <img src={TonerItem4} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/media/view">
+              <div className={`${cardClass} media cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <div className="flex flex-col justify-center flex-shrink-0">
+                      <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
+                        FOREVER Temporary Tattoo Paper for Toner Printers (100
+                        pack)
+                      </p>
+                    </div>
+                    <div className="flex flex-row justify-between gap-4">
+                      <p className="font-bold uppercase truncate">
+                        AWTATPAPER100
+                      </p>
+                      <p className="font-bold">75pgs.</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={MediaItem2} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} media cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <div className="flex flex-col justify-center flex-shrink-0">
-                    <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
-                      UniNet iColor Standard 560 2 Step Laser/LED Heat Transfer
-                      Paper
-                    </p>
+                ) : (
+                  <>
+                    <img src={MediaItem1} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/media/view">
+              <div className={`${cardClass} media cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <div className="flex flex-col justify-center flex-shrink-0">
+                      <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
+                        FOREVER Multi-Trans Full Color Toner Transfer Paper for
+                        Hard Surfaces
+                      </p>
+                    </div>
+                    <div className="flex flex-row justify-between gap-4">
+                      <p className="truncate font-bold uppercase">
+                        FOREVMTRANS
+                      </p>
+                      <p className="font-bold">75pgs.</p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-between gap-4">
-                    <p className="truncate font-bold uppercase">UNICHTSTD560</p>
-                    <p className="font-bold">75pgs.</p>
+                ) : (
+                  <>
+                    <img src={MediaItem2} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/media/view">
+              <div className={`${cardClass} media cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <div className="flex flex-col justify-center flex-shrink-0">
+                      <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
+                        UniNet iColor Standard 560 2 Step Laser/LED Heat
+                        Transfer Paper
+                      </p>
+                    </div>
+                    <div className="flex flex-row justify-between gap-4">
+                      <p className="truncate font-bold uppercase">
+                        UNICHTSTD560
+                      </p>
+                      <p className="font-bold">75pgs.</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={MediaItem3} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} media cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <div className="flex flex-col justify-center flex-shrink-0">
-                    <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
-                      Versa Sheen Digital White Toner Transfer Paper 8.5" x 11"
-                      or 11" x 17"
-                    </p>
+                ) : (
+                  <>
+                    <img src={MediaItem3} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/media/view">
+              <div className={`${cardClass} media cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <div className="flex flex-col justify-center flex-shrink-0">
+                      <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
+                        Versa Sheen Digital White Toner Transfer Paper 8.5" x
+                        11" or 11" x 17"
+                      </p>
+                    </div>
+                    <div className="flex flex-row justify-between gap-4">
+                      <p className="truncate font-bold uppercase">K-AWVSDTP</p>
+                      <p className="font-bold">75pgs.</p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-between gap-4">
-                    <p className="truncate font-bold uppercase">K-AWVSDTP</p>
-                    <p className="font-bold">75pgs.</p>
+                ) : (
+                  <>
+                    <img src={MediaItem4} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/media/view">
+              <div className={`${cardClass} media cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <div className="flex flex-col justify-center flex-shrink-0">
+                      <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
+                        Paropy CL Trim Free Dark - Laser Paper 8.5" x 11" 50
+                        Pack
+                      </p>
+                    </div>
+                    <div className="flex flex-row justify-between gap-4">
+                      <p className="truncate font-bold uppercase">
+                        JTPPCLTFD-8511
+                      </p>
+                      <p className="font-bold">75pgs.</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={MediaItem4} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} media cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <div className="flex flex-col justify-center flex-shrink-0">
-                    <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
-                      Paropy CL Trim Free Dark - Laser Paper 8.5" x 11" 50 Pack
-                    </p>
+                ) : (
+                  <>
+                    <img src={MediaItem5} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/media/view">
+              <div className={`${cardClass} media cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <div className="flex flex-col justify-center flex-shrink-0">
+                      <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
+                        UniNet iColor AquaClear 1 Step Media
+                      </p>
+                    </div>
+                    <div className="flex flex-row justify-between gap-4">
+                      <p className="truncate font-bold uppercase">UNICHAC</p>
+                      <p className="font-bold">75pgs.</p>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-between gap-4">
-                    <p className="truncate font-bold uppercase">
-                      JTPPCLTFD-8511
-                    </p>
-                    <p className="font-bold">75pgs.</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <img src={MediaItem5} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} media cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <div className="flex flex-col justify-center flex-shrink-0">
-                    <p className="font-normal overflow-hidden text-ellipsis whitespace-break-spaces line-clamp-2">
-                      UniNet iColor AquaClear 1 Step Media
-                    </p>
-                  </div>
-                  <div className="flex flex-row justify-between gap-4">
-                    <p className="truncate font-bold uppercase">UNICHAC</p>
-                    <p className="font-bold">75pgs.</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <img src={MediaItem6} alt="" />
-                </>
-              )}
-            </div>
+                ) : (
+                  <>
+                    <img src={MediaItem6} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
             {/* <Card className="toner" isDescSelected={isDescSelected} />
             <Card className="media" isDescSelected={isDescSelected} /> */}
           </div>

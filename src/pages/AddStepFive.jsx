@@ -23,7 +23,7 @@ export const AddStepFive = () => {
             <p className="text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
               Step 5 - Duplicate
             </p>
-            <p className="text-[#000] text-xs font-normal leading-[14.833px] tracking-[0.66px] items-center px-[91px] mt-[20px]">
+            <p className="text-[#000] custom-font-sm items-center px-[91px] mt-[20px]">
               <span className="font-bold">There's a duplicate: </span>The old
               consumable item on the left is going to be replaced by the item on
               the right.
@@ -37,17 +37,15 @@ export const AddStepFive = () => {
                     </div>
                   </div>
                   <div className="flex flex-row px-2 py-1 gap-[10px]">
-                    <div className="flex flex-col text-[#616161] w-[80px] text-xs font-bold leading-[14.833px] tracking-[0.66px] gap-[10px]">
+                    <div className="flex flex-col text-[#000] w-[80px] font-bold custom-font-sm gap-[10px]">
                       <p>Name</p>
                       <p>Description</p>
                       <p>SKU</p>
                     </div>
-                    <div className="flex flex-col w-[150px] text-[#616161] text-xs font-bold leading-[14.833px] tracking-[0.66px] gap-[10px]">
-                      <p className="font-bold truncate">
-                        UniNet iColor 560 Toner
-                      </p>
-                      <p className="font-normal">Cyan EXT Yield</p>
-                      <p className="font-normal">UNICT560</p>
+                    <div className="flex flex-col w-[150px] text-[#000] custom-font-sm gap-[10px]">
+                      <p className="truncate">UniNet iColor 560 Toner</p>
+                      <p>Cyan EXT Yield</p>
+                      <p>UNICT560</p>
                     </div>
                   </div>
                 </div>
@@ -61,17 +59,15 @@ export const AddStepFive = () => {
                     </div>
                   </div>
                   <div className="flex flex-row px-2 py-1 gap-[10px]">
-                    <div className="flex flex-col text-[#616161] w-[80px] text-xs font-bold leading-[14.833px] tracking-[0.66px] gap-[10px]">
+                    <div className="flex flex-col text-[#000] w-[80px] font-bold custom-font-sm gap-[10px]">
                       <p>Name</p>
                       <p>Description</p>
                       <p>SKU</p>
                     </div>
-                    <div className="flex flex-col w-[150px] text-[#616161] text-xs font-bold leading-[14.833px] tracking-[0.66px] gap-[10px]">
-                      <p className="font-bold truncate">
-                        UniNet iColor 560 Toner
-                      </p>
-                      <p className="font-normal">Cyan EXT Yield</p>
-                      <p className="font-normal">UNICT560</p>
+                    <div className="flex flex-col w-[150px] text-[#000] custom-font-sm gap-[10px]">
+                      <p className="truncate">UniNet iColor 560 Toner</p>
+                      <p>Cyan EXT Yield</p>
+                      <p>UNICT560</p>
                     </div>
                   </div>
                 </div>

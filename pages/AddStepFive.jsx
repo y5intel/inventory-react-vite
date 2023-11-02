@@ -93,19 +93,19 @@ export const AddStepFive = () => {
             </div>
             <div className="flex justify-between mx-[24px] mt-[20px]">
               <Link to="/overview/add/step4">
-                <button className="rounded-[25px] w-[132px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+                <button className="rounded-[25px] w-[110px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
                   Back
                 </button>
               </Link>
 
               <button
-                className="rounded-[25px] w-[132px] h-[50px] bg-[#4FC38E] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]"
+                className="rounded-[25px] w-[155px] h-[50px] bg-[#4FC38E] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]"
                 onClick={() => setShowModal(true)}
               >
                 Recycle Offer
               </button>
               <button
-                className="rounded-[25px] w-[132px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]"
+                className="rounded-[25px] w-[110px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]"
                 onClick={handleNextClick}
               >
                 Next

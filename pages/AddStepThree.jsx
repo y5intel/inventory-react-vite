@@ -22,13 +22,13 @@ export const AddStepThree = () => {
               cost you
             </p>
           </div>
-          <div className="px-[54px] h-[208px] grid grid-cols-2 gap-[29px] pt-[13px]">
-            <div className="w-full border border-[#B6B6B6] flex flex-col">
+          <div className="px-[48px] h-[208px] flex flex-row gap-[39px] pt-[13px]">
+            <div className="border border-[#B6B6B6] flex flex-col w-[287px] h-[208px]">
               <div className="flex justify-center">
-                <img src={Image} alt="" className="w-[118px]" />
+                <img src={Image} alt="" />
               </div>
 
-              <div className="flex flex-row px-2 gap-[16px]">
+              <div className="flex flex-row px-2 gap-[16px] pt-2">
                 <div className="flex flex-col text-[#616161] w-[78px] font-bold custom-font-sm">
                   <p>Name</p>
                   <p className="pt-[11px]">Description</p>
@@ -45,14 +45,12 @@ export const AddStepThree = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex flex-col gap-[10px]">
-              <div className="">
-                <label className="text-[#333] custom-font-sm font-medium">
-                  Date of Purchase
-                </label>
-              </div>
-              <div>
-                <select className="bg-gray-50 border border-[#A2A2A2] text-[black] text-base block w-[341px] h-[35px] pl-[20px]">
+            <div className="w-full flex flex-col">
+              <label className="text-[#333] custom-font-sm font-medium my-2">
+                Date of Purchase
+              </label>
+              <div className="mb-[15px]">
+                <select className="bg-gray-50 border border-[#A2A2A2] text-[black] text-base block w-[341px] h-[35px] pl-[15px]">
                   <option>Choose Date</option>
                   <option>Within the last week</option>
                   <option>Within the last month</option>
@@ -63,7 +61,7 @@ export const AddStepThree = () => {
                 </select>
               </div>
               <div>
-                <select className="bg-gray-50 border border-[#A2A2A2] text-[black] text-base block w-[341px] h-[35px] pl-[20px]">
+                <select className="bg-gray-50 border border-[#A2A2A2] text-[black] text-base block w-[341px] h-[35px] pl-[15px]">
                   <option>Choose Place</option>
                   <option>UNINET Store</option>
                   <option>UNINET Website</option>
@@ -78,14 +76,14 @@ export const AddStepThree = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between mx-[24px] mt-[30px]">
+          <div className="flex justify-between mx-[32px] mt-[30px]">
             <Link to="/overview/add/step2">
-              <button className="rounded-[25px] w-[132px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
                 Back
               </button>
             </Link>
             <Link to="/overview/add/step4">
-              <button className="rounded-[25px] w-[132px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
                 Next
               </button>
             </Link>

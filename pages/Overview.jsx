@@ -37,7 +37,7 @@ export const Overview = ({ activeScreenParam }) => {
           </Link>
         </div>
         <div className="bg-[#FFF] h-[354px] rounded-[32px] ml-[10px] mr-[13px] flex flex-col">
-          <div className="flex flex-row justify-between pt-2 px-6">
+          <div className="flex flex-row justify-between pt-2 pl-[22px] pr-[10px]">
             <p className="flex text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
               All Consumables
             </p>
@@ -60,7 +60,7 @@ export const Overview = ({ activeScreenParam }) => {
               </button>
             </div>
           </div>
-          <div className="mr-[10px] mb-[20px] pl-[29px] pr-[10px] pb-[10px] grid grid-cols-3 gap-[10px] mt-[11px] overflow-y-auto">
+          <div className="mr-[10px] mb-[20px] pl-[8px] pr-[10px] pb-[10px] grid grid-cols-3 gap-[10px] mt-[11px] overflow-y-auto">
             <Link to="/toner/view">
               <div className={`${cardClass} toner cursor-pointer`}>
                 {isDescSelected ? (

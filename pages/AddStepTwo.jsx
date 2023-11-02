@@ -92,14 +92,14 @@ export const AddStepTwo = () => {
               <div className="flex justify-center">
                 <input
                   type="text"
-                  className="block w-[215px] py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none caret-[#573CFA]"
+                  className="block w-[215px] h-[35px] py-1.5 px-2.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none caret-[#573CFA]"
                   placeholder="Price"
                 />
               </div>
               <div className="flex justify-center">
                 <input
                   type="text"
-                  className="block w-[215px] py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none caret-[#573CFA]"
+                  className="block w-[215px] h-[35px] py-1.5 px-2.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none caret-[#573CFA]"
                   placeholder="Tax %"
                 />
               </div>
@@ -110,7 +110,7 @@ export const AddStepTwo = () => {
                   </label>
                   <input
                     type="text"
-                    className="block w-[215px] py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none caret-[#573CFA] border border-[#573CFA]"
+                    className="block w-[215px] h-[35px] py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none caret-[#573CFA] border border-[#573CFA]"
                   />
                 </div>
               </div>
@@ -118,7 +118,7 @@ export const AddStepTwo = () => {
           </div>
           <div className="flex justify-end mr-[24px] mt-[30px]">
             <Link to="/overview/add/step3">
-              <button className="rounded-[25px] w-[132px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
                 Next
               </button>
             </Link>

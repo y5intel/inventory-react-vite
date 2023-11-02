@@ -35,7 +35,7 @@ export const RemoveVerify = () => {
               <p>Consumable removed!</p>
               <Link to="/">
                 <button className="w-[110px] h-[50px] rounded-[25px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black custom-font-sm">
-                  Yes
+                  Okay!
                 </button>
               </Link>
             </div>

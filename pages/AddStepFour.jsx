@@ -61,9 +61,7 @@ export const AddStepFour = () => {
                   <p className="font-bold">Total Price</p>
                   <p className="font-normal">$100.00</p>
                   <p className="font-bold">Date of Purchase</p>
-                  <p className="font-normal truncate">
-                    09/01/2023 - 09/07/2023
-                  </p>
+                  <p className="font-normal truncate">09/01/2023-09/07/2023</p>
                   <p className="font-bold">Place of Purchase</p>
                   <p className="font-normal">UNINET Store</p>
                 </div>
@@ -72,12 +70,12 @@ export const AddStepFour = () => {
           </div>
           <div className="flex justify-between mx-[24px] mt-[10px]">
             <Link to="/overview/add/step3">
-              <button className="rounded-[25px] w-[132px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
                 Back
               </button>
             </Link>
             <Link to="/overview/add/step5">
-              <button className="rounded-[25px] w-[132px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+              <button className="rounded-[25px] w-[176px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
                 Add Consumable
               </button>
             </Link>

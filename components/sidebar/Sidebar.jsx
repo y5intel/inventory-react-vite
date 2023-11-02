@@ -59,7 +59,7 @@ export const Sidebar = ({
           <div className="flex flex-col gap-[20px] mx-[4px]">
             <div
               onClick={() => handleClicked("Overview")}
-              className={`flex rounded-[19px] justify-center items-center p-[6px] border border-[#573CFA] cursor-pointer ${
+              className={`flex rounded-[19px] p-[6px] border border-[#573CFA] cursor-pointer px-auto ${
                 isSelected.Overview && "dashboard-button-selected border-none"
               } gap-[10px]`}
             >
@@ -95,7 +95,7 @@ export const Sidebar = ({
             </div>
             <div
               onClick={() => handleClicked("Toner")}
-              className={`flex rounded-[19px] justify-center items-center h-[50px] border border-[#4FC38E] cursor-pointer ${
+              className={`flex rounded-[19px] p-[8px] h-[50px] border border-[#4FC38E] cursor-pointer ${
                 isSelected.Toner && "toner-button-selected border-none"
               } gap-[10px]`}
             >
@@ -106,40 +106,36 @@ export const Sidebar = ({
                   <img src={TonerSelected} alt="Toner-select" />
                 )}
                 {sidebarActive && (
-                  <div className="flex flex-col">
-                    <p
-                      className={`${
-                        isSelected.Toner ? "text-[#FFF]" : "text-[#4FC38E]"
-                      } text-sm font-medium leading-[17.363px] tracking-[0.77px] `}
-                    >
-                      Toner
-                    </p>
-                  </div>
+                  <p
+                    className={`${
+                      isSelected.Toner ? "text-[#FFF]" : "text-[#4FC38E]"
+                    } text-sm font-medium leading-[17.363px] tracking-[0.77px] `}
+                  >
+                    Toner
+                  </p>
                 )}
               </div>
             </div>
             <div
               onClick={() => handleClicked("Media")}
-              className={`flex rounded-[19px] justify-center items-center h-[50px] border border-[#FFA74B] cursor-pointer ${
+              className={`flex rounded-[19px] p-[11px] h-[50px] border border-[#FFA74B] cursor-pointer ${
                 isSelected.Media && "media-button-selected border-none"
               } gap-[10px]`}
             >
-              <div className="flex flex-row gap-[18px] items-center">
+              <div className="flex flex-row gap-[21px] items-center">
                 {!isSelected.Media ? (
                   <img src={Media} alt="Media" className="" />
                 ) : (
                   <img src={MediaSelected} alt="Media-select" />
                 )}
                 {sidebarActive && (
-                  <div className="flex flex-col">
-                    <p
-                      className={`${
-                        isSelected.Media ? "text-[#FFF]" : "text-[#FFA74B]"
-                      } text-sm font-medium leading-[17.363px] tracking-[0.77px] `}
-                    >
-                      Media
-                    </p>
-                  </div>
+                  <p
+                    className={`${
+                      isSelected.Media ? "text-[#FFF]" : "text-[#FFA74B]"
+                    } text-sm font-medium leading-[17.363px] tracking-[0.77px] `}
+                  >
+                    Media
+                  </p>
                 )}
               </div>
             </div>

@@ -150,7 +150,7 @@ export const Media = ({ activeScreenParam }) => {
                 )}
               </div>
             </Link>
-            {/* <Link to="/media/view">
+            <Link to="/media/view">
               <div className={`${cardClass} media cursor-pointer`}>
                 {isDescSelected ? (
                   <div className="flex flex-col gap-[12px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
@@ -194,7 +194,7 @@ export const Media = ({ activeScreenParam }) => {
                   </>
                 )}
               </div>
-            </Link> */}
+            </Link>
             {/* <Card className="toner" isDescSelected={isDescSelected} />
             <Card className="media" isDescSelected={isDescSelected} /> */}
           </div>

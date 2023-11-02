@@ -17,35 +17,43 @@ export const RemoveConsumable = () => {
               Do you want to remove or replace the consumable below?
             </p>
             <table className="text-[#616161] custom-font-sm mt-4">
-              <tr className="h-[39px]">
-                <td className="font-bold">Name</td>
-                <td className="font-bold">UniNet iColor 560 Toner Cartridge</td>
-              </tr>
-              <tr className="h-[39px]">
-                <td className="font-bold">Description</td>
-                <td>Cyan EXT Yield</td>
-              </tr>
-              <tr className="h-[39px]">
-                <td className="font-bold">SKU</td>
-                <td>UNICT560</td>
-              </tr>
-              <tr className="h-[39px]">
-                <td className="font-bold">Yields</td>
-                <td>7,000 pages @ 5% coverage (A4 size)</td>
-              </tr>
+              <tbody>
+                <tr className="h-[39px]">
+                  <td className="font-bold">Name</td>
+                  <td className="font-bold">
+                    UniNet iColor 560 Toner Cartridge
+                  </td>
+                </tr>
+                <tr className="h-[39px]">
+                  <td className="font-bold">Description</td>
+                  <td>Cyan EXT Yield</td>
+                </tr>
+                <tr className="h-[39px]">
+                  <td className="font-bold">SKU</td>
+                  <td>UNICT560</td>
+                </tr>
+                <tr className="h-[39px]">
+                  <td className="font-bold">Yields</td>
+                  <td>7,000 pages @ 5% coverage (A4 size)</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className="flex flex-row px-[31px] pt-[20px] justify-between">
-            <button className="w-[110px] h-[50px] rounded-[25px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black custom-font-sm">
-              <Link to="/">Back</Link>
-            </button>
+            <Link to="/">
+              <button className="w-[110px] h-[50px] rounded-[25px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black custom-font-sm">
+                Back
+              </button>
+            </Link>
             <div className="flex gap-4">
               <button className="w-[121px] h-[50px] rounded-[25px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white custom-font-sm">
                 Replace
               </button>
-              <button className="w-[121px] h-[50px] rounded-[25px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white custom-font-sm">
-                <Link to="/overview/remove/verify">Remove</Link>
-              </button>
+              <Link to="/overview/remove/verify">
+                <button className="w-[121px] h-[50px] rounded-[25px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white custom-font-sm">
+                  Remove
+                </button>
+              </Link>
             </div>
           </div>
         </div>

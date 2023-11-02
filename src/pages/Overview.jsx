@@ -24,17 +24,17 @@ export const Overview = ({ activeScreenParam }) => {
   return (
     <>
       <div className="bg-[#D9D9D9] w-full h-[428px]">
-        <div className="flex flex-row justify-between py-[13px] px-[17px]">
+        <div className="flex flex-row justify-between pt-[13px] pb-[7px] px-[17px]">
           <p className="flex text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
             {activeScreenParam}
           </p>
-          <button className="rounded-full bg-[#573CFA] px-4 py-[11px] w-[250px]">
-            <Link to="/overview/add">
+          <Link to="/overview/add">
+            <button className="rounded-full bg-[#573CFA] px-4 py-[11px] w-[250px] h-[42px]">
               <p className=" text-[16px] font-bold text-[#FFF] leading-[19.844px]">
                 Add Consumable
               </p>
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
         <div className="bg-[#FFF] h-[354px] rounded-[32px] ml-[10px] mr-[13px] flex flex-col">
           <div className="flex flex-row justify-between pt-2 px-6">

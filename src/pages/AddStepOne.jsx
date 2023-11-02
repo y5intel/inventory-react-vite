@@ -1,14 +1,22 @@
 import { Navbar } from "../components/navbar/Navbar";
 import { Link } from "react-router-dom";
 import { Carousel } from "../components/carousel/Carousel";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const AddStepOne = () => {
-  const [isProgressBarClicked, setIsProgressBarClicked] = useState(false);
+  const [isVerifySuccess, setIsVerifySuccess] = useState(false);
 
-  const handleProgressBarClick = () => {
-    setIsProgressBarClicked(true);
+  const handleClick = () => {
+    window.location.href = "/overview/add/step2";
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVerifySuccess(true);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -25,31 +33,33 @@ export const AddStepOne = () => {
               Step 1 - Insert 12-word phrase
             </p>
           </div>
-          <Carousel _visibility={!isProgressBarClicked} />
-          <div
-            className="progress-bar cursor-pointer"
-            onClick={handleProgressBarClick}
-          >
-            {!isProgressBarClicked ? (
-              <div className="progress" style={{ width: "10%" }}></div>
-            ) : (
-              <Link to="/overview/add/step2">
-                <div className="progress" style={{ width: "100%" }}></div>
-              </Link>
-            )}
-          </div>
-          {isProgressBarClicked ? (
-            <div className="flex justify-center mt-2">
-              <p className="text-[#6c6c6c] custom-font-sm items-center mx-auto">
-                Item loaded successfully!
-              </p>
-            </div>
+          <Carousel _visibility={!isVerifySuccess} />
+
+          {isVerifySuccess ? (
+            <>
+              <div
+                className="progress-bar cursor-pointer"
+                onClick={handleClick}
+              >
+                <div className="progress"></div>
+              </div>
+              <div className="flex justify-center mt-2">
+                <p className="text-[#6c6c6c] custom-font-sm items-center mx-auto">
+                  Item loaded successfully!
+                </p>
+              </div>
+            </>
           ) : (
-            <div className="flex justify-center mt-2">
-              <p className="text-[#6c6c6c] custom-font-sm items-center mx-auto">
-                Verifying Code
-              </p>
-            </div>
+            <>
+              <div className="progress-bar">
+                <div className="progress"></div>
+              </div>
+              <div className="flex justify-center mt-2">
+                <p className="text-[#6c6c6c] custom-font-sm items-center mx-auto">
+                  Verifying Code
+                </p>
+              </div>
+            </>
           )}
         </div>
       </div>

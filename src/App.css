@@ -45,6 +45,17 @@
   height: 100%;
   background-color: #4fc38e;
   border-radius: 10px;
+  width: 0%;
+  animation: progress 5s ease-in-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .toner {

@@ -16,9 +16,11 @@ export const AddConsumable = () => {
             <p className="flex text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center ml-[16px]">
               Step 1 - Insert 12-word phrase
             </p>
-            <button className="rounded-[25px] bg-[#F96262] px-[10px] py-[11px] gap-[10px] text-white text-lg leading-[22.324px] tracking-[0.99px]">
-              <Link to="/">Cancel</Link>
-            </button>
+            <Link to="/">
+              <button className="rounded-[25px] bg-[#F96262] px-[10px] py-[11px] gap-[10px] text-white text-lg leading-[22.324px] tracking-[0.99px]">
+                Cancel
+              </button>
+            </Link>
           </div>
           <div className="mx-[38px] px-[16px] pt-[4px]">
             <div className="flex flex-col gap-[17px]">

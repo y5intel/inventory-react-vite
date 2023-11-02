@@ -17,19 +17,19 @@ export const Toner = ({ activeScreenParam }) => {
   return (
     <>
       <div className="bg-[#D9D9D9] w-full h-[428px]">
-        <div className="flex flex-row justify-between py-[13px] px-[17px]">
+        <div className="flex flex-row justify-between pt-[13px] pb-[7px] px-[17px]">
           <p className="flex text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
             {activeScreenParam}
           </p>
-          <button className="rounded-full bg-[#573CFA] px-4 py-[11px] w-[250px] ">
-            <Link to="/toner/add">
+          <Link to="/toner/add">
+            <button className="rounded-full bg-[#573CFA] px-4 py-[11px] w-[250px] h-[42px]">
               <p className=" text-[16px] font-bold text-[#FFF] leading-[19.844px]">
                 Add Consumable
               </p>
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
-        <div className="bg-[#FFF] h-[354px] rounded-[32px] ml-[10px] mr-[13px] flex flex-col">
+        <div className="bg-[#FFF] h-[281px] rounded-[32px] ml-[10px] mr-[13px] flex flex-col">
           <div className="flex flex-row justify-between pt-2 px-6">
             <p className="flex text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
               Toner Balance
@@ -54,70 +54,86 @@ export const Toner = ({ activeScreenParam }) => {
             </div>
           </div>
           <div className="mr-[10px] mb-[20px] pl-[29px] pr-[10px] pb-[10px] grid grid-cols-3 gap-[10px] mt-[11px] overflow-y-auto">
-            <div className={`${cardClass} toner cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <p className="truncate font-normal">UniNet iColor 560 T...</p>
-                  <p className="truncate font-normal">Magenta EXT Yield</p>
-                  <div className="flex flex-row justify-between">
-                    <p className="font-bold uppercase">unict560</p>
-                    <p className="font-bold uppercase">75%</p>
+            <Link to="/toner/view">
+              <div className={`${cardClass} toner cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <p className="truncate font-normal">
+                      UniNet iColor 560 T...
+                    </p>
+                    <p className="truncate font-normal">Magenta EXT Yield</p>
+                    <div className="flex flex-row justify-between">
+                      <p className="font-bold uppercase">unict560</p>
+                      <p className="font-bold uppercase">75%</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={TonerItem1} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} toner cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <p className="truncate font-normal">UniNet iColor 560 T...</p>
-                  <p className="truncate font-normal">Cyan EXT Yield</p>
-                  <div className="flex flex-row justify-between">
-                    <p className="font-bold uppercase">unict560</p>
-                    <p className="font-bold uppercase">75%</p>
+                ) : (
+                  <>
+                    <img src={TonerItem1} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/toner/view">
+              <div className={`${cardClass} toner cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <p className="truncate font-normal">
+                      UniNet iColor 560 T...
+                    </p>
+                    <p className="truncate font-normal">Cyan EXT Yield</p>
+                    <div className="flex flex-row justify-between">
+                      <p className="font-bold uppercase">unict560</p>
+                      <p className="font-bold uppercase">75%</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={TonerItem2} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} toner cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <p className="truncate font-normal">UniNet iColor 560 T...</p>
-                  <p className="truncate font-normal">Black EXT Yield</p>
-                  <div className="flex flex-row justify-between">
-                    <p className="font-bold uppercase">unict560</p>
-                    <p className="font-bold uppercase">75%</p>
+                ) : (
+                  <>
+                    <img src={TonerItem2} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/toner/view">
+              <div className={`${cardClass} toner cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <p className="truncate font-normal">
+                      UniNet iColor 560 T...
+                    </p>
+                    <p className="truncate font-normal">Black EXT Yield</p>
+                    <div className="flex flex-row justify-between">
+                      <p className="font-bold uppercase">unict560</p>
+                      <p className="font-bold uppercase">75%</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={TonerItem3} alt="" />
-                </>
-              )}
-            </div>
-            <div className={`${cardClass} toner cursor-pointer`}>
-              {isDescSelected ? (
-                <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
-                  <p className="truncate font-normal">UniNet iColor 560 T...</p>
-                  <p className="truncate font-normal">Yellow EXT Yield</p>
-                  <div className="flex flex-row justify-between">
-                    <p className="font-bold uppercase">unict560</p>
-                    <p className="font-bold uppercase">75%</p>
+                ) : (
+                  <>
+                    <img src={TonerItem3} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
+            <Link to="/toner/view">
+              <div className={`${cardClass} toner cursor-pointer`}>
+                {isDescSelected ? (
+                  <div className="flex flex-col gap-[7px] text-[#000] text-[14px] font-normal leading-[17.363px] tracking-[0.77px]">
+                    <p className="truncate font-normal">
+                      UniNet iColor 560 T...
+                    </p>
+                    <p className="truncate font-normal">Yellow EXT Yield</p>
+                    <div className="flex flex-row justify-between">
+                      <p className="font-bold uppercase">unict560</p>
+                      <p className="font-bold uppercase">75%</p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <>
-                  <img src={TonerItem4} alt="" />
-                </>
-              )}
-            </div>
+                ) : (
+                  <>
+                    <img src={TonerItem4} alt="" />
+                  </>
+                )}
+              </div>
+            </Link>
             {/* <Card className="toner" isDescSelected={isDescSelected} />
             <Card className="media" isDescSelected={isDescSelected} /> */}
           </div>

@@ -24,23 +24,23 @@ export const TonerView = () => {
               <p className="flex text-[#000] text-base font-normal leading-[19.844px] tracking-[0.88px] items-center">
                 {activeScreenParam}
               </p>
-              <button className="rounded-full bg-[#573CFA] px-4 py-[11px] w-[250px]">
-                <Link to="/overview/add">
+              <Link to="/overview/add">
+                <button className="rounded-full bg-[#573CFA] px-4 py-[11px] w-[250px]">
                   <p className=" text-[16px] font-bold text-[#FFF] leading-[19.844px]">
                     Add Consumable
                   </p>
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
             <div className="bg-[#FFF] h-[354px] rounded-[32px] ml-[10px] mr-[13px] flex flex-col relative">
               <div className="absolute top-2 right-2">
-                <button className="bg-transparent border-0 text-black float-right">
-                  <Link to="/">
+                <Link to="/">
+                  <button className="bg-transparent border-0 text-black float-right">
                     <span className="text-white text-xl font-bold opacity-7 h-10 w-10 block bg-[#F96262] py-1 rounded-full">
                       x
                     </span>
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
               <div className="flex flex-col pt-2 px-6 mx-[30px]">
                 <div className="flex flex-row gap-2">
@@ -121,9 +121,11 @@ export const TonerView = () => {
                   <button className="rounded-[25px] w-[64px] h-[39px] bg-[#B7B7B7] px-auto py-auto gap-[10px] text-white text-sm font-normal leading-[14.883px] tracking-[0.66px]">
                     Help
                   </button>
-                  <button className="rounded-[25px] w-[148px] h-[39px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white text-sm font-normal leading-[14.883px] tracking-[0.66px]">
-                    <Link to="/overview/remove">Remove/Replace</Link>
-                  </button>
+                  <Link to="/overview/remove">
+                    <button className="rounded-[25px] w-[148px] h-[39px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white text-sm font-normal leading-[14.883px] tracking-[0.66px]">
+                      Remove/Replace
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

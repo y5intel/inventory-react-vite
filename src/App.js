@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { AddConsumable } from "./pages/AddConsumable";
+import { RecycleConsumable } from "./pages/RecycleConsumable";
+import { ReplacePrint } from "./pages/ReplacePrint";
 import { RemoveConsumable } from "./pages/RemoveConsumable";
 import { RemoveVerify } from "./pages/RemoveVerify";
 import { AddStepOne } from "./pages/AddStepOne";
@@ -29,6 +31,13 @@ function App() {
           <Route path="/overview/add" element={<AddConsumable />} />
           <Route path="/overview/remove" element={<RemoveConsumable />} />
           <Route path="/overview/remove/verify" element={<RemoveVerify />} />
+          <Route path="/overview/replace" element={<AddConsumable />} />
+          <Route path="/overview/replace/step1" element={<AddStepOne />} />
+          <Route path="/overview/replace/step2" element={<AddStepTwo />} />
+          <Route path="/overview/replace/step3" element={<AddStepThree />} />
+          <Route path="/overview/replace/step4" element={<AddStepFour />} />
+          <Route path="/overview/recycle" element={<RecycleConsumable />} />
+          <Route path="/overview/replace/print" element={<ReplacePrint />} />
           <Route path="/overview/add/step1" element={<AddStepOne />} />
           <Route path="/overview/add/step2" element={<AddStepTwo />} />
           <Route path="/overview/add/step3" element={<AddStepThree />} />

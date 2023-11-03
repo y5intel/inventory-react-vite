@@ -1,15 +1,18 @@
 import { Navbar } from "../components/navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Image from "../assets/image/image 7.png";
 
 export const AddStepThree = () => {
+  const location = useLocation();
+  const path = location.pathname.split("/")[2];
+
   return (
     <>
       <Navbar sidebarActive={true} />
       <div className="bg-[#D9D9D9] w-[800px] h-[428px]">
         <div className="py-[14px] px-[26px]">
           <p className="text-[#000] text-lg font-normal leading-[22.324px] items-center">
-            Add Consumable
+            {path === "add" ? "Add" : "Replace"} Consumable
           </p>
         </div>
         <div className="bg-[#FFF] h-[361px] rounded-[32px] ml-[18px] mr-[21px]">
@@ -77,13 +80,13 @@ export const AddStepThree = () => {
             </div>
           </div>
           <div className="flex justify-between mx-[32px] mt-[30px]">
-            <Link to="/overview/add/step2">
-              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+            <Link to={`/overview/${path === "add" ? "add" : "replace"}/step2`}>
+              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#A2A2A2] px-auto py-auto gap-[10px] text-black text-xs leading-[14.883px] tracking-[0.66px]">
                 Back
               </button>
             </Link>
-            <Link to="/overview/add/step4">
-              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+            <Link to={`/overview/${path === "add" ? "add" : "replace"}/step4`}>
+              <button className="rounded-[25px] w-[110px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs leading-[14.883px] tracking-[0.66px]">
                 Next
               </button>
             </Link>

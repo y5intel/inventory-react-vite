@@ -1,14 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Navbar } from "../components/navbar/Navbar";
 
 export const AddConsumable = () => {
+  const location = useLocation();
+  const path = location.pathname.split("/").pop();
+
   return (
     <>
       <Navbar sidebarActive={true} />
       <div className="bg-[#D9D9D9] w-[800px] h-[428px]">
         <div className="py-[14px] px-[26px]">
           <p className="flex text-[#000] text-lg font-normal leading-[22.324px] items-center">
-            Add Consumable
+            {path === "add" ? "Add" : "Replace"} Consumable
           </p>
         </div>
         <div className="bg-[#FFF] h-[361px] rounded-[32px] ml-[18px] mr-[21px]">
@@ -93,8 +96,10 @@ export const AddConsumable = () => {
                 />
               </div>
               <div className="flex justify-center mt-2">
-                <Link to="/overview/add/step1">
-                  <button className="rounded-[25px] w-[132px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+                <Link
+                  to={`/overview/${path === "add" ? "add" : "replace"}/step1`}
+                >
+                  <button className="rounded-[25px] w-[132px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs leading-[14.883px] tracking-[0.66px]">
                     Load Item
                   </button>
                 </Link>

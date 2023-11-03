@@ -26,7 +26,7 @@ export const AddStepSix = (props) => {
         )}
         <div className="flex justify-center mx-[24px]">
           <Link to="/overview/">
-            <button className="rounded-[25px] w-[102px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs font-bold leading-[14.883px] tracking-[0.66px]">
+            <button className="rounded-[25px] w-[102px] h-[50px] bg-[#FFA74B] px-auto py-auto gap-[10px] text-black text-xs leading-[14.883px] tracking-[0.66px]">
               Done
             </button>
           </Link>

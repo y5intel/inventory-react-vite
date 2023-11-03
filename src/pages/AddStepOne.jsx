@@ -1,13 +1,18 @@
 import { Navbar } from "../components/navbar/Navbar";
-// import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Carousel } from "../components/carousel/Carousel";
 import { useState, useEffect } from "react";
 
 export const AddStepOne = () => {
+  const location = useLocation();
+  const path = location.pathname.split("/")[2];
+
   const [isVerifySuccess, setIsVerifySuccess] = useState(false);
 
   const handleClick = () => {
-    window.location.href = "/overview/add/step2";
+    window.location.href = `/overview/${
+      path === "add" ? "add" : "replace"
+    }/step2`;
   };
 
   useEffect(() => {
@@ -24,7 +29,7 @@ export const AddStepOne = () => {
       <div className="bg-[#D9D9D9] w-[800px] h-[428px]">
         <div className="py-[14px] px-[26px]">
           <p className="text-[#000] text-lg font-normal leading-[22.324px] items-center">
-            Add Consumable
+            {path === "add" ? "Add" : "Replace"} Consumable
           </p>
         </div>
         <div className="bg-[#FFF] h-[361px] rounded-[32px] ml-[18px] mr-[21px]">

@@ -46,9 +46,11 @@ export const RemoveConsumable = () => {
               </button>
             </Link>
             <div className="flex gap-4">
-              <button className="w-[121px] h-[50px] rounded-[25px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white custom-font-sm">
-                Replace
-              </button>
+              <Link to="/overview/replace">
+                <button className="w-[121px] h-[50px] rounded-[25px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white custom-font-sm">
+                  Replace
+                </button>
+              </Link>
               <Link to="/overview/remove/verify">
                 <button className="w-[121px] h-[50px] rounded-[25px] bg-[#573CFA] px-auto py-auto gap-[10px] text-white custom-font-sm">
                   Remove

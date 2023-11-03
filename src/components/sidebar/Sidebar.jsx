@@ -142,18 +142,16 @@ export const Sidebar = ({
           </div>
           <div
             onClick={() => handleClicked("Token")}
-            className={`flex rounded-[19px] justify-center items-center h-[50px] mx-[4px] border border-[#A2A2A2] cursor-pointer ${
+            className={`flex rounded-[19px] p-[13px] h-[50px] mx-[4px] border border-[#A2A2A2] cursor-pointer ${
               isSelected.Token && "token-button-selected border-none"
             } gap-[10px]`}
           >
             <div className="flex flex-row gap-[18px] items-center">
               <img src={Token} alt="Token" className="" />
               {sidebarActive && (
-                <div className="flex flex-col">
-                  <p className="text-[#000] text-sm font-medium leading-[17.363px] tracking-[0.77px]">
-                    Token Offers
-                  </p>
-                </div>
+                <p className="text-[#000] text-sm font-medium leading-[17.363px] tracking-[0.77px]">
+                  TokenOffers
+                </p>
               )}
             </div>
           </div>
